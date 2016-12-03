@@ -8,7 +8,6 @@ class AOC_01
 {
 public:
 	AOC_01(std::string fileName);
-	void showFirstDoubleLocation();
 
 private:
 	//members

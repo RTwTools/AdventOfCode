@@ -39,19 +39,16 @@ AOC_01::AOC_01(std::string fileName) :
 
 	//calculate distance to HQ
 	int distance = std::abs(curLocation.x + curLocation.y);
+	int distanceB = std::abs(firstDoubleLocation.x + firstDoubleLocation.y);
 
 	std::cout << "--- Challenge 01 A ---" << std::endl;
 	std::cout << "Location x[" << curLocation.x << "], y[" << curLocation.y << "]." << std::endl;
 	std::cout << "Distance to Easter Bunny HQ [" << distance << "]." << std::endl;
-}
-
-void AOC_01::showFirstDoubleLocation()
-{
-	int distance = std::abs(firstDoubleLocation.x + firstDoubleLocation.y);
 	
 	std::cout << "--- Challenge 01 B ---" << std::endl;
 	std::cout << "Location x[" << firstDoubleLocation.x << "], y[" << firstDoubleLocation.y << "]." << std::endl;
-	std::cout << "Distance to Easter Bunny HQ [" << distance << "]." << std::endl;
+	std::cout << "Distance to Easter Bunny HQ [" << distanceB << "]." << std::endl;
+	std::cout << std::endl;
 }
 
 void AOC_01::checkLocation()

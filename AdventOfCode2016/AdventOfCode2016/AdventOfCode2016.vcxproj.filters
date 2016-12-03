@@ -4,11 +4,11 @@
     <Filter Include="AOC_01">
       <UniqueIdentifier>{0438c384-c3fb-4afe-9bb2-cfb9d2626e5e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="AOC_02A">
-      <UniqueIdentifier>{dd30bf8e-5324-4246-b0c3-ca836e68262e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="general">
       <UniqueIdentifier>{0d1f2991-6718-4143-b09a-bed28bcdfdbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AOC_02">
+      <UniqueIdentifier>{dd30bf8e-5324-4246-b0c3-ca836e68262e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -24,8 +24,8 @@
     <ClInclude Include="AOC_01\Direction.h">
       <Filter>AOC_01</Filter>
     </ClInclude>
-    <ClInclude Include="AOC_02\AOC_02A.h">
-      <Filter>AOC_02A</Filter>
+    <ClInclude Include="AOC_02\AOC_02.h">
+      <Filter>AOC_02</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -36,8 +36,8 @@
     <ClCompile Include="AOC_01\AOC_01.cpp">
       <Filter>AOC_01</Filter>
     </ClCompile>
-    <ClCompile Include="AOC_02\AOC_02A.cpp">
-      <Filter>AOC_02A</Filter>
+    <ClCompile Include="AOC_02\AOC_02.cpp">
+      <Filter>AOC_02</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -45,7 +45,7 @@
       <Filter>AOC_01</Filter>
     </Text>
     <Text Include="AOC_02\input02.txt">
-      <Filter>AOC_02A</Filter>
+      <Filter>AOC_02</Filter>
     </Text>
   </ItemGroup>
 </Project>

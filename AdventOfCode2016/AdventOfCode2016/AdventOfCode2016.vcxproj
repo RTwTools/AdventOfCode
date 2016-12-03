@@ -145,12 +145,12 @@
     <ClInclude Include="AOC_01\AOC_01.h" />
     <ClInclude Include="AOC_01\Coordinate.h" />
     <ClInclude Include="AOC_01\Direction.h" />
-    <ClInclude Include="AOC_02\AOC_02A.h" />
+    <ClInclude Include="AOC_02\AOC_02.h" />
     <ClInclude Include="general\InputHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AOC_01\AOC_01.cpp" />
-    <ClCompile Include="AOC_02\AOC_02A.cpp" />
+    <ClCompile Include="AOC_02\AOC_02.cpp" />
     <ClCompile Include="general\InputHandler.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
