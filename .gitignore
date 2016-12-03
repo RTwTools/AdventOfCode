@@ -142,6 +142,7 @@ publish/
 *.azurePubxml
 # TODO: Comment the next line if you want to checkin your web deploy settings
 # but database connection strings (with potential passwords) will be unencrypted
+
 *.pubxml
 *.publishproj
 
@@ -151,6 +152,7 @@ publish/
 PublishScripts/
 
 # NuGet Packages
+
 *.nupkg
 # The packages folder can be ignored because of Package Restore
 **/packages/*
@@ -250,3 +252,36 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
