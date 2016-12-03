@@ -32,6 +32,7 @@ AOC_02::AOC_02(std::string fileName) :
 
 	std::cout << "--- Challenge 02 B ---" << std::endl;
 	std::cout << "The bathroom code is [" << codeB << "]." << std::endl;
+	std::cout << std::endl;
 }
 
 void AOC_02::move(char dir)

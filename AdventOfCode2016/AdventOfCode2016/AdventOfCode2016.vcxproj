@@ -146,17 +146,20 @@
     <ClInclude Include="AOC_01\Coordinate.h" />
     <ClInclude Include="AOC_01\Direction.h" />
     <ClInclude Include="AOC_02\AOC_02.h" />
+    <ClInclude Include="AOC_03\AOC_03.h" />
     <ClInclude Include="general\InputHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AOC_01\AOC_01.cpp" />
     <ClCompile Include="AOC_02\AOC_02.cpp" />
+    <ClCompile Include="AOC_03\AOC_03.cpp" />
     <ClCompile Include="general\InputHandler.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="AOC_01\input01.txt" />
     <Text Include="AOC_02\input02.txt" />
+    <Text Include="AOC_03\input03.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
