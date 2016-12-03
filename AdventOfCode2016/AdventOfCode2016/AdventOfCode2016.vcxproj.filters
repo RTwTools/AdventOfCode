@@ -1,47 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="AOC_01">
+      <UniqueIdentifier>{0438c384-c3fb-4afe-9bb2-cfb9d2626e5e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    <Filter Include="AOC_02A">
+      <UniqueIdentifier>{dd30bf8e-5324-4246-b0c3-ca836e68262e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="general">
+      <UniqueIdentifier>{0d1f2991-6718-4143-b09a-bed28bcdfdbc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AOC_01.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="AOC01\AOC_01.h">
+      <Filter>AOC_01</Filter>
     </ClInclude>
-    <ClInclude Include="Coordinate.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="AOC01\Coordinate.h">
+      <Filter>AOC_01</Filter>
     </ClInclude>
-    <ClInclude Include="Direction.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="AOC01\Direction.h">
+      <Filter>AOC_01</Filter>
     </ClInclude>
-    <ClInclude Include="InputHandler.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="AOC02\AOC_02A.h">
+      <Filter>AOC_02A</Filter>
+    </ClInclude>
+    <ClInclude Include="general\InputHandler.h">
+      <Filter>general</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AOC_01.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="AOC01\AOC_01.cpp">
+      <Filter>AOC_01</Filter>
     </ClCompile>
-    <ClCompile Include="InputHandler.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="AOC02\AOC_02A.cpp">
+      <Filter>AOC_02A</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="general\InputHandler.cpp">
+      <Filter>general</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input01.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="AOC01\input01.txt">
+      <Filter>AOC_01</Filter>
+    </Text>
+    <Text Include="AOC02\input02.txt">
+      <Filter>AOC_02A</Filter>
     </Text>
   </ItemGroup>
 </Project>

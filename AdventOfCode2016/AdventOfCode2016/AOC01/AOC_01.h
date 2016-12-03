@@ -2,14 +2,13 @@
 
 #include "Direction.h"
 #include "Coordinate.h"
-#include "InputHandler.h"
+#include "../general/InputHandler.h"
 
 class AOC_01
 {
 public:
 	AOC_01(std::string fileName);
 	void showFirstDoubleLocation();
-
 
 private:
 	//members
