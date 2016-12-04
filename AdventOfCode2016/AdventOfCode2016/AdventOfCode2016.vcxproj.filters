@@ -13,6 +13,9 @@
     <Filter Include="AOC_03">
       <UniqueIdentifier>{284511df-2475-4ce0-ba96-c172f514380b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AOC_04">
+      <UniqueIdentifier>{7c3d263b-7b4e-4760-b822-c42d1cca188b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="general\InputHandler.h">
@@ -33,6 +36,12 @@
     <ClInclude Include="AOC_03\AOC_03.h">
       <Filter>AOC_03</Filter>
     </ClInclude>
+    <ClInclude Include="AOC_04\AOC_04.h">
+      <Filter>AOC_04</Filter>
+    </ClInclude>
+    <ClInclude Include="AOC_04\CharCount.h">
+      <Filter>AOC_04</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -48,6 +57,9 @@
     <ClCompile Include="AOC_03\AOC_03.cpp">
       <Filter>AOC_03</Filter>
     </ClCompile>
+    <ClCompile Include="AOC_04\AOC_04.cpp">
+      <Filter>AOC_04</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="AOC_01\input01.txt">
@@ -58,6 +70,9 @@
     </Text>
     <Text Include="AOC_03\input03.txt">
       <Filter>AOC_03</Filter>
+    </Text>
+    <Text Include="AOC_04\input04.txt">
+      <Filter>AOC_04</Filter>
     </Text>
   </ItemGroup>
 </Project>
