@@ -1,7 +1,8 @@
 #include "AOC_04.h"
 
 AOC_04::AOC_04(std::string fileName) :
-	sectorSum(0)
+	sectorSum(0),
+	northPoleSectorID(0)
 
 {
 	//open input file
@@ -16,22 +17,58 @@ AOC_04::AOC_04(std::string fileName) :
 		//split string at '-' and remove whitespace at the front and the back
 		std::vector<std::string> room = splitString(lines[i], '-');
 		removeWhiteSpaces(room);
+		int roomID = 0;
 
-		sectorSum += checkRoom(room);
+		//check if room is real
+		if (checkRoom(room, &roomID))
+			sectorSum += roomID;
+
+		//decrypt room name
+		int shift = roomID % 26;
+		decodeRoomName(room, shift);
+
+		//find north pole object
+		if (room[0].find("north", 0) != -1)
+			northPoleSectorID = roomID;
 	}
 
 	std::cout << "--- Challenge 04 A ---" << std::endl;
 	std::cout << "The sum of the sector IDs of the real rooms is [" << sectorSum << "]." << std::endl;
-	/*
+	
 	std::cout << "--- Challenge 04 B ---" << std::endl;
-	std::cout << "The number of possible triangles is [" << countB << "]." << std::endl;
-	std::cout << std::endl;*/
+	std::cout << "North Pole Objects are stored in [" << northPoleSectorID << "]." << std::endl;
+	std::cout << std::endl;
 }
 
-int AOC_04::checkRoom(std::vector<std::string> room)
+void AOC_04::decodeRoomName(std::vector<std::string> &room, int shift)
+{
+	for (size_t i = 0; i < room.size()-1; i++)
+	{
+		for (size_t j = 0; j < room[i].length(); j++)
+		{
+			char * chr = &(room[i][j]);
+			shiftChar(chr, shift);
+		}
+		//std::cout << room[i] << "-";
+	}
+	//std::cout << std::endl;
+}
+
+void AOC_04::shiftChar(char * chr, int shift)
+{
+	for (int i = 0; i < shift; i++)
+	{
+		if (*chr == 'z')
+			*chr = 'a';
+		else
+			(*chr)++;
+	}
+}
+
+bool AOC_04::checkRoom(std::vector<std::string> room, int * roomSectorID)
 {
 	std::string checksum;
-	int sectorID = getChecksumAndID(room[room.size() - 1], &checksum);
+	*roomSectorID = getChecksumAndID(room[room.size() - 1], &checksum);
 	
 	//remove checksum and sectorID part
 	room.pop_back();
@@ -43,10 +80,10 @@ int AOC_04::checkRoom(std::vector<std::string> room)
 	std::sort(chrCount.begin(), chrCount.end(), CharCount::before);
 
 	//check if checksum is correct / room is real
-	if (!compareChecksum(checksum))
-		return 0;
+	if (compareChecksum(checksum))
+		return true;
 	
-	return sectorID;
+	return false;
 }
 
 bool AOC_04::compareChecksum(std::string checksum)

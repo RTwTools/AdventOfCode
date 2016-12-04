@@ -11,13 +11,16 @@ public:
 private:
 	//members
 	int sectorSum;
+	int northPoleSectorID;
 	std::vector<CharCount> chrCount;
 
 	//methods
-	int checkRoom(std::vector<std::string> room);
+	bool checkRoom(std::vector<std::string> room, int * roomSectorID);
 	bool compareChecksum(std::string checksum);
 	int getChecksumAndID(std::string sectorIDChecksum, std::string * checksum);
 	void countOccurences(std::vector<std::string> str);
 	void addChar(char chr);
+	void decodeRoomName(std::vector<std::string> &room, int shift);
+	void shiftChar(char * chr, int shift);
 };
 
