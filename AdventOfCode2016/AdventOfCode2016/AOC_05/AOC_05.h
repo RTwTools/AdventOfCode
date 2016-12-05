@@ -1,6 +1,5 @@
 #pragma once
 #include "../general/InputHandler.h"
-#include <windows.h>
 #include "md5.h"
 
 #define FIVEZEROS	"00000"

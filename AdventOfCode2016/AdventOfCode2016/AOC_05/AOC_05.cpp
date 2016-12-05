@@ -5,8 +5,6 @@ AOC_05::AOC_05(std::string input) :
 	count(0),
 	nrOfChrs(0)
 {
-	SetPriorityClass(GetCurrentProcess(), PROCESS_MODE_BACKGROUND_BEGIN);
-
 	std::cout << "--- Challenge 05 A ---" << std::endl;
 	std::cout << "The password is: " << std::endl;
 
@@ -44,6 +42,4 @@ AOC_05::AOC_05(std::string input) :
 		count++;
 	}
 	std::cout << std::endl;
-
-	SetPriorityClass(GetCurrentProcess(), PROCESS_MODE_BACKGROUND_END);
 }
