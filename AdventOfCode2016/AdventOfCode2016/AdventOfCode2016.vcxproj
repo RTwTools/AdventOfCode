@@ -149,6 +149,8 @@
     <ClInclude Include="AOC_03\AOC_03.h" />
     <ClInclude Include="AOC_04\AOC_04.h" />
     <ClInclude Include="AOC_04\CharCount.h" />
+    <ClInclude Include="AOC_05\AOC_05.h" />
+    <ClInclude Include="AOC_05\md5.h" />
     <ClInclude Include="general\InputHandler.h" />
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +158,8 @@
     <ClCompile Include="AOC_02\AOC_02.cpp" />
     <ClCompile Include="AOC_03\AOC_03.cpp" />
     <ClCompile Include="AOC_04\AOC_04.cpp" />
+    <ClCompile Include="AOC_05\AOC_05.cpp" />
+    <ClCompile Include="AOC_05\md5.cpp" />
     <ClCompile Include="general\InputHandler.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -164,6 +168,7 @@
     <Text Include="AOC_02\input02.txt" />
     <Text Include="AOC_03\input03.txt" />
     <Text Include="AOC_04\input04.txt" />
+    <Text Include="AOC_05\input05.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
