@@ -1,6 +1,6 @@
 #pragma once
 #include "../general/InputHandler.h"
-#include"CharCount.h"
+#include"../general/CharCount.h"
 #include <algorithm>
 
 class AOC_04
