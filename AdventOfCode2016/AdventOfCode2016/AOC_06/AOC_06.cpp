@@ -19,13 +19,14 @@ AOC_06::AOC_06(std::string fileName) :
 	{
 		std::sort(chrCount[i].begin(), chrCount[i].end(), CharCount::before);
 		message += chrCount[i][0].chr;
+		messageB += chrCount[i][chrCount[i].size() - 1].chr;
 	}
 
 	std::cout << "--- Challenge 0x A ---" << std::endl;
 	std::cout << "The error-corrected message is [" << message << "]." << std::endl;
 	
 	std::cout << "--- Challenge 0x B ---" << std::endl;
-	//std::cout << " [" << solutionB << "]." << std::endl;
+	std::cout << "The error-corrected message is [" << messageB << "]." << std::endl;
 	std::cout << std::endl;
 }
 

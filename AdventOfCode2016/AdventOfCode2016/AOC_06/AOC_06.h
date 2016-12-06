@@ -12,7 +12,7 @@ public:
 
 private:
 	//members
-	std::string message;
+	std::string message, messageB;
 	std::vector<std::vector<CharCount> > chrCount;
 	//methods
 	void countOccurences(std::string str);
