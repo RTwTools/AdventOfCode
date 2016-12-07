@@ -11,10 +11,12 @@ public:
 private:
 	//members
 	int countA, countB;
-	std::vector<std::string> ipParts, hyperParts;
+	std::vector<std::string> ipParts, hyperParts, bab;
 
 	//methods
 	bool checkAbba(std::vector<std::string> vec);
+	bool findABA(std::string bab_str);
+	bool findBAB();
 	void splitIP(std::string ip);
 };
 

@@ -18,13 +18,27 @@ AOC_07::AOC_07(std::string fileName) :
 		//check hyperparts
 		if (!checkAbba(hyperParts) && checkAbba(ipParts))
 			countA++;
+
+		//find BAB
+		if (findBAB())
+		{
+			//find ABA
+			for (size_t i = 0; i < bab.size(); i++)
+			{
+				if (findABA(bab[i]))
+				{
+					countB++;
+					break;
+				}
+			}
+		}
 	}
 
 	std::cout << "--- Challenge 0x A ---" << std::endl;
 	std::cout << "The Number of IPs that support TLS is [" << countA << "]." << std::endl;
 	
 	std::cout << "--- Challenge 0x B ---" << std::endl;
-	//std::cout << " [" << solutionB << "]." << std::endl;
+	std::cout << "The Number of IPs that support SSL is [" << countB << "]." << std::endl;
 	std::cout << std::endl;
 }
 
@@ -42,6 +56,41 @@ bool AOC_07::checkAbba(std::vector<std::string> vec)
 				return true;
 		}
 	}
+	return false;
+}
+
+bool AOC_07::findABA(std::string bab_str)
+{
+	std::string aba = { bab_str[1], bab_str[0], bab_str[1] };
+	
+	for (size_t i = 0; i < ipParts.size(); i++)
+	{
+		if (ipParts[i].find(aba) != -1)
+			return true;
+	}
+
+	return false;
+}
+
+bool AOC_07::findBAB()
+{
+	bab.clear();
+	for (size_t i = 0; i < hyperParts.size(); i++)
+	{
+		std::string str = hyperParts[i];
+		if (str.length() < 3)
+			continue;
+
+		for (size_t i = 0; i < str.length() - 2; i++)
+		{
+			if ((str[i] == str[i + 2]))
+				bab.push_back(str.substr(i, 3));
+		}
+	}
+
+	if (bab.size() != 0)
+		return true;
+
 	return false;
 }
 
