@@ -34,10 +34,10 @@ AOC_07::AOC_07(std::string fileName) :
 		}
 	}
 
-	std::cout << "--- Challenge 0x A ---" << std::endl;
+	std::cout << "--- Challenge 07 A ---" << std::endl;
 	std::cout << "The Number of IPs that support TLS is [" << countA << "]." << std::endl;
 	
-	std::cout << "--- Challenge 0x B ---" << std::endl;
+	std::cout << "--- Challenge 07 B ---" << std::endl;
 	std::cout << "The Number of IPs that support SSL is [" << countB << "]." << std::endl;
 	std::cout << std::endl;
 }
