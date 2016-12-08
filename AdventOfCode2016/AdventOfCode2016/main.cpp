@@ -5,6 +5,7 @@
 #include "AOC_05/AOC_05.h"
 #include "AOC_06/AOC_06.h"
 #include "AOC_07/AOC_07.h"
+#include "AOC_08/AOC_08.h"
 
 int main()
 {
@@ -26,9 +27,12 @@ int main()
 	
 	//Challenge Day 06
 	AOC_06 aoc_06("AOC_06/input06.txt");
-	*/
+	
 	//Challenge Day 07
 	AOC_07 aoc_07("AOC_07/input07.txt");
+	*/
+	//Challenge Day 08
+	AOC_08 aoc_08("AOC_08/input08.txt");
 
 	system("pause");
 	return 0;
