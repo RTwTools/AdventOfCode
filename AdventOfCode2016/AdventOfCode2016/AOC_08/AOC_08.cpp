@@ -45,10 +45,8 @@ void AOC_08::printDisplay()
 int AOC_08::countPixels()
 {
 	int count = 0;
-	std::cout << "Display:" << std::endl;
 	for (size_t i = 0; i < display.size(); i++)
 	{
-		std::cout << display[i] << std::endl;
 		for (size_t j = 0; j < display[i].length(); j++)
 		{
 			if (display[i][j] == '#')
