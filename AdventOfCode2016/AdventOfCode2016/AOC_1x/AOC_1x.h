@@ -1,10 +1,10 @@
 #pragma once
 #include "../general/InputHandler.h"
 
-class AOC_0x
+class AOC_1x
 {
 public:
-	AOC_0x(std::string fileName);
+	AOC_1x(std::string fileName);
 
 private:
 	//members
