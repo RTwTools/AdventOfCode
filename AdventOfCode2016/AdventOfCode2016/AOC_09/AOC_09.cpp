@@ -8,57 +8,52 @@ AOC_09::AOC_09(std::string fileName)
 
 	//split string at '\n' 
 	std::string str = splitString(input, '\n')[0];
-
-	findMarkers(str);
-
 	
 	std::cout << "--- Challenge 09 A ---" << std::endl;
-	std::cout << "The decompressed length is [" << fileContent.length() << "]." << std::endl;
+	std::cout << "The decompressed length is [" << findMarkers(str, true) << "]." << std::endl;
 	
 	std::cout << "--- Challenge 09 B ---" << std::endl;
-	//std::cout << " [" << solutionB << "]." << std::endl;
+	std::cout << "The decompressed length is [" << findMarkers(str, false) << "]." << std::endl;
 	std::cout << std::endl;
 }
 
-void AOC_09::findMarkers(std::string text)
+long long AOC_09::findMarkers(std::string text, bool partA)
 {
+	long long count = 0;
 	std::string str = text;
 	int begin = str.find('(', 0);
 	int end = str.find(')', 0);
 
 	while (begin != -1 && end != -1)
 	{
-		//read next marker
-		std::string marker = str.substr(begin + 1, end-1);
-		int length =0 , times = 0;
+		//add length before marker to the count
+		if (begin != 0)
+			count += str.substr(0, begin).length();
+
+		//read marker
+		std::string marker = str.substr(begin + 1, end - 1);
+		int length = 0, times = 0;
 		readMarker(marker, &length, &times);
 
-		//add string before marker to text
-		if (begin != 0)
-			fileContent += str.substr(0, begin);
+		//check if marker length is bigger than the length of the string
+		int maxLength = (int)str.substr(end + 1).length();
+		if (length > maxLength) length = maxLength;
 
-		//execute marker
-		if ((end + 1 + length) > (int)str.substr(end + 1).length())
-			fileContent += executeMarker(times, str.substr(end + 1));
+		//decompress
+		if (partA)
+			count += times * length;
 		else
-			fileContent += executeMarker(times, str.substr(end + 1, length));
-		str = str.substr((end + 1) + length);
+			count += times * findMarkers(str.substr(end + 1, length), partA);
 
-		//find new marker
+		//decompress remaining part
+		str = str.substr(end + 1 + length);
 		begin = str.find('(', 0);
 		end = str.find(')', 0);
 	}
-	fileContent += str;
-}
 
-std::string AOC_09::executeMarker(int times, std::string markerStr)
-{
-	std::string str;
-	for (int i = 0; i < times; i++)
-	{
-		str += markerStr;
-	}
-	return str;
+	//add remaining part without a marker to the count
+	count += str.length();
+	return count;
 }
 
 void AOC_09::readMarker(std::string marker, int *length, int * times)
