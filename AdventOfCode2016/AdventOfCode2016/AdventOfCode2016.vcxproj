@@ -156,6 +156,7 @@
     <ClInclude Include="AOC_09\AOC_09.h" />
     <ClInclude Include="AOC_10\AOC_10.h" />
     <ClInclude Include="AOC_10\Bot.h" />
+    <ClInclude Include="AOC_10\Output.h" />
     <ClInclude Include="general\CharCount.h" />
     <ClInclude Include="general\InputHandler.h" />
   </ItemGroup>

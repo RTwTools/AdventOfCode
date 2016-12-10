@@ -39,18 +39,20 @@ AOC_10::AOC_10(std::string fileName) :
 					botA = bots[vectorId].id;
 				}
 
-				//ignore output destination
+				//check output destination
 				int destLow, destHigh;
-				if (commands[i][5] == "output")
-					destLow = -1;
-				else
-					destLow = std::stoi(commands[i][6]);
-				if (commands[i][10] == "output")
-					destHigh = -1;
-				else
-					destHigh = std::stoi(commands[i][11]);
+				bool destLowOutput = false;
+				bool destHighOutput = false;
 
-				transportChips(vectorId, destHigh, destLow);
+				if (commands[i][5] == "output")
+					destLowOutput = true;
+				if (commands[i][10] == "output")
+					destHighOutput = true;
+
+				destLow = std::stoi(commands[i][6]);
+				destHigh = std::stoi(commands[i][11]);
+
+				transportChips(vectorId, destHigh, destLow, destHighOutput, destLowOutput);
 				action = true;
 			}
 		}
@@ -65,25 +67,47 @@ AOC_10::AOC_10(std::string fileName) :
 			else
 				break;
 		}
-	}
+	} 
 
 	std::cout << "--- Challenge 10 A ---" << std::endl;
 	std::cout << "The number of the bot is [" << botA << "]." << std::endl;
 	
 	std::cout << "--- Challenge 10 B ---" << std::endl;
-	//std::cout << " [" << solutionB << "]." << std::endl;
+	std::cout << "The product of the chips in the outputs is [" << calculateProductOfOutputs(0, 2) << "]." << std::endl;
 	std::cout << std::endl;
 }
 
-void AOC_10::transportChips(int vectorId, int destBotHigh, int destBotLow)
+int AOC_10::calculateProductOfOutputs(int startIndex, int endIndex)
+{
+	//calculate product of chips in outputs
+	int product = 1;
+	for (size_t i = 0; i < outputs.size(); i++)
+	{
+		if (outputs[i].id >= startIndex && outputs[i].id <= endIndex)
+		{
+			for (size_t j = 0; j < outputs[i].Chips.size(); j++)
+			{
+				product *= outputs[i].Chips[j];
+			}
+		}
+	}
+	return product;
+}
+
+void AOC_10::transportChips(int vectorId, int destHigh, int destLow, bool destHighOutput, bool destLowOutput)
 {
 	int highChip, lowChip;
 	bots[vectorId].releaseChips(&lowChip, &highChip);
 
-	if (destBotHigh != -1)
-		addToBot(destBotHigh, highChip);
-	if (destBotLow != -1)
-		addToBot(destBotLow, lowChip);
+	if (!destHighOutput)
+		addToBot(destHigh, highChip);
+	else
+		addToOutput(destHigh, highChip);
+
+	if (!destLowOutput)
+		addToBot(destLow, lowChip);
+	else
+		addToOutput(destLow, lowChip);
 }
 
 void AOC_10::addToBot(int botId, int chip)
@@ -101,11 +125,36 @@ void AOC_10::addToBot(int botId, int chip)
 		bots[vectorId].receiveChip(chip);
 }
 
+void AOC_10::addToOutput(int outputId, int chip)
+{
+	int vectorId = getOutputVectorId(outputId);
+	if (vectorId == -1)
+	{
+		//output does not exists
+		Output newOutput;
+		newOutput.id = outputId;
+		newOutput.Chips.push_back(chip);
+		outputs.push_back(newOutput);
+	}
+	else
+		outputs[vectorId].Chips.push_back(chip);
+}
+
 int AOC_10::getBotVectorId(int botId)
 {
 	for (size_t i = 0; i < bots.size(); i++)
 	{
 		if (botId == bots[i].id)
+			return i;
+	}
+	return -1;
+}
+
+int AOC_10::getOutputVectorId(int outputId)
+{
+	for (size_t i = 0; i < outputs.size(); i++)
+	{
+		if (outputId == outputs[i].id)
 			return i;
 	}
 	return -1;

@@ -84,6 +84,9 @@
     <ClInclude Include="AOC_10\Bot.h">
       <Filter>AOC_10</Filter>
     </ClInclude>
+    <ClInclude Include="AOC_10\Output.h">
+      <Filter>AOC_10</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
