@@ -40,6 +40,12 @@
     <Filter Include="AOC_12">
       <UniqueIdentifier>{fe1dec55-b3e8-4887-b822-aea69620dd7f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AOC_13">
+      <UniqueIdentifier>{e3bd3c96-d046-46ed-bf8a-dbea8f566bb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AOC_14">
+      <UniqueIdentifier>{ce5050b3-6e33-41bf-a19f-c752a61c8068}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="general\InputHandler.h">
@@ -64,9 +70,6 @@
       <Filter>AOC_04</Filter>
     </ClInclude>
     <ClInclude Include="AOC_05\AOC_05.h">
-      <Filter>AOC_05</Filter>
-    </ClInclude>
-    <ClInclude Include="AOC_05\md5.h">
       <Filter>AOC_05</Filter>
     </ClInclude>
     <ClInclude Include="AOC_06\AOC_06.h">
@@ -99,6 +102,18 @@
     <ClInclude Include="AOC_12\AOC_12.h">
       <Filter>AOC_12</Filter>
     </ClInclude>
+    <ClInclude Include="AOC_13\AOC_13.h">
+      <Filter>AOC_13</Filter>
+    </ClInclude>
+    <ClInclude Include="AOC_14\AOC_14.h">
+      <Filter>AOC_14</Filter>
+    </ClInclude>
+    <ClInclude Include="general\md5.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="AOC_14\Key.h">
+      <Filter>AOC_14</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -118,9 +133,6 @@
       <Filter>AOC_04</Filter>
     </ClCompile>
     <ClCompile Include="AOC_05\AOC_05.cpp">
-      <Filter>AOC_05</Filter>
-    </ClCompile>
-    <ClCompile Include="AOC_05\md5.cpp">
       <Filter>AOC_05</Filter>
     </ClCompile>
     <ClCompile Include="AOC_06\AOC_06.cpp">
@@ -143,6 +155,15 @@
     </ClCompile>
     <ClCompile Include="AOC_12\AOC_12.cpp">
       <Filter>AOC_12</Filter>
+    </ClCompile>
+    <ClCompile Include="AOC_13\AOC_13.cpp">
+      <Filter>AOC_13</Filter>
+    </ClCompile>
+    <ClCompile Include="AOC_14\AOC_14.cpp">
+      <Filter>AOC_14</Filter>
+    </ClCompile>
+    <ClCompile Include="general\md5.cpp">
+      <Filter>general</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
