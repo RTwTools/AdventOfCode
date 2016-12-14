@@ -24,10 +24,10 @@ AOC_05::AOC_05(std::string input) :
 	std::cout << "The password is: " << std::endl;
 
 	//reset values
-	count = 0;
+	count = nrOfChrs = 0;
 	password = "--------";
 
-	while (password.find('-',0) != -1)
+	while (nrOfChrs < 8)
 	{
 		hash = md5(input + std::to_string(count));
 		if (hash.find(FIVEZEROS, 0) == 0)
@@ -37,6 +37,7 @@ AOC_05::AOC_05(std::string input) :
 			{
 				password[position] = hash[6];
 				std::cout << password << std::endl;
+				nrOfChrs++;
 			}
 		}
 		count++;

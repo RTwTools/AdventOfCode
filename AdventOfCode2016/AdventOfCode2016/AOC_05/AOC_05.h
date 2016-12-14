@@ -1,6 +1,6 @@
 #pragma once
 #include "../general/InputHandler.h"
-#include "md5.h"
+#include "../general/md5.h"
 
 #define FIVEZEROS	"00000"
 #define INVALID     8
