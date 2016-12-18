@@ -12,6 +12,7 @@
 #include "AOC_12/AOC_12.h"
 #include "AOC_13/AOC_13.h"
 #include "AOC_14/AOC_14.h"
+#include "AOC_15/AOC_15.h"
 
 int main()
 {
@@ -45,18 +46,22 @@ int main()
 	
 	//Challenge Day 10
 	AOC_10 aoc_10("AOC_10/input10.txt");
-	
+	*/
 	//Challenge Day 11
-	AOC_11 aoc_11();
-	
+	AOC_11 aoc_11; //memory issues!
+	/*
 	//Challenge Day 12
 	AOC_12 aoc_12("AOC_12/input12.txt");
 	
 	//Challenge Day 13
 	AOC_13 aoc_13(1364);
-	*/
+	
 	//Challenge Day 14
 	AOC_14 aoc_14("jlmsuwbz");
+
+	//Challenge Day 15
+	AOC_15 aoc_15("AOC_15/input15.txt");
+	*/
 
 	system("pause");
 	return 0;

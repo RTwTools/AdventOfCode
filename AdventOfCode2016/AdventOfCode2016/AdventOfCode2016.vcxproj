@@ -157,10 +157,14 @@
     <ClInclude Include="AOC_10\Bot.h" />
     <ClInclude Include="AOC_10\Output.h" />
     <ClInclude Include="AOC_11\AOC_11.h" />
+    <ClInclude Include="AOC_11\Floor.h" />
+    <ClInclude Include="AOC_11\Item.h" />
+    <ClInclude Include="AOC_11\Node.h" />
     <ClInclude Include="AOC_12\AOC_12.h" />
     <ClInclude Include="AOC_13\AOC_13.h" />
     <ClInclude Include="AOC_14\AOC_14.h" />
     <ClInclude Include="AOC_14\Key.h" />
+    <ClInclude Include="AOC_15\AOC_15.h" />
     <ClInclude Include="general\CharCount.h" />
     <ClInclude Include="general\InputHandler.h" />
     <ClInclude Include="general\md5.h" />
@@ -177,9 +181,12 @@
     <ClCompile Include="AOC_09\AOC_09.cpp" />
     <ClCompile Include="AOC_10\AOC_10.cpp" />
     <ClCompile Include="AOC_11\AOC_11.cpp" />
+    <ClCompile Include="AOC_11\Floor.cpp" />
+    <ClCompile Include="AOC_11\Node.cpp" />
     <ClCompile Include="AOC_12\AOC_12.cpp" />
     <ClCompile Include="AOC_13\AOC_13.cpp" />
     <ClCompile Include="AOC_14\AOC_14.cpp" />
+    <ClCompile Include="AOC_15\AOC_15.cpp" />
     <ClCompile Include="general\InputHandler.cpp" />
     <ClCompile Include="general\md5.cpp" />
     <ClCompile Include="main.cpp" />
@@ -195,6 +202,7 @@
     <Text Include="AOC_09\input09.txt" />
     <Text Include="AOC_10\input10.txt" />
     <Text Include="AOC_12\input12.txt" />
+    <Text Include="AOC_15\input15.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
