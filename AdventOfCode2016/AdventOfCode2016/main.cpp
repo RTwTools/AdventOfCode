@@ -52,16 +52,15 @@ int main()
 	
 	//Challenge Day 12
 	AOC_12 aoc_12("AOC_12/input12.txt");
-	*/
+	
 	//Challenge Day 13
 	AOC_13 aoc_13(1364);
-	/*
+	
 	//Challenge Day 14
 	AOC_14 aoc_14("jlmsuwbz");
-
+	*/
 	//Challenge Day 15
 	AOC_15 aoc_15("AOC_15/input15.txt");
-	*/
 
 	system("pause");
 	return 0;
