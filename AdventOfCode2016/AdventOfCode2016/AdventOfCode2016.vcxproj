@@ -165,6 +165,7 @@
     <ClInclude Include="AOC_14\AOC_14.h" />
     <ClInclude Include="AOC_14\Key.h" />
     <ClInclude Include="AOC_15\AOC_15.h" />
+    <ClInclude Include="AOC_16\AOC_16.h" />
     <ClInclude Include="general\CharCount.h" />
     <ClInclude Include="general\Coordinate.h" />
     <ClInclude Include="general\InputHandler.h" />
@@ -189,6 +190,7 @@
     <ClCompile Include="AOC_13\Move.cpp" />
     <ClCompile Include="AOC_14\AOC_14.cpp" />
     <ClCompile Include="AOC_15\AOC_15.cpp" />
+    <ClCompile Include="AOC_16\AOC_16.cpp" />
     <ClCompile Include="general\InputHandler.cpp" />
     <ClCompile Include="general\md5.cpp" />
     <ClCompile Include="main.cpp" />
