@@ -169,6 +169,7 @@
     <ClInclude Include="AOC_17\AOC_17.h" />
     <ClInclude Include="AOC_17\Route.h" />
     <ClInclude Include="AOC_18\AOC_18.h" />
+    <ClInclude Include="AOC_19\AOC_19.h" />
     <ClInclude Include="general\CharCount.h" />
     <ClInclude Include="general\Coordinate.h" />
     <ClInclude Include="general\InputHandler.h" />
@@ -197,6 +198,7 @@
     <ClCompile Include="AOC_17\AOC_17.cpp" />
     <ClCompile Include="AOC_17\Route.cpp" />
     <ClCompile Include="AOC_18\AOC_18.cpp" />
+    <ClCompile Include="AOC_19\AOC_19.cpp" />
     <ClCompile Include="general\InputHandler.cpp" />
     <ClCompile Include="general\md5.cpp" />
     <ClCompile Include="main.cpp" />
