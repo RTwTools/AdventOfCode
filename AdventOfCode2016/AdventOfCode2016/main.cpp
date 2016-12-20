@@ -14,6 +14,7 @@
 #include "AOC_14/AOC_14.h"
 #include "AOC_15/AOC_15.h"
 #include "AOC_16/AOC_16.h"
+#include "AOC_17/AOC_17.h"
 
 int main()
 {
@@ -62,9 +63,12 @@ int main()
 	
 	//Challenge Day 15
 	AOC_15 aoc_15("AOC_15/input15.txt");
-	*/
+	
 	//Challenge Day 16
 	AOC_16 aoc_16("11011110011011101");
+	*/
+	//Challenge Day 17
+	AOC_17 aoc_17("pvhmgsws");
 
 	system("pause");
 	return 0;

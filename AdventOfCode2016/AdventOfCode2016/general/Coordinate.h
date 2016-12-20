@@ -14,4 +14,9 @@ struct Coordinate
 		y = i.y;
 		return *this;
 	}
+
+	Coordinate operator+(const Coordinate& i) const
+	{
+		return Coordinate{ i.x + x, i.y + y};
+	}
 };
