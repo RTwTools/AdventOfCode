@@ -1,7 +1,7 @@
 #pragma once
 
 #include "Direction.h"
-#include "Coordinate.h"
+#include "../general/Coordinate.h"
 #include "../general/InputHandler.h"
 
 class AOC_01

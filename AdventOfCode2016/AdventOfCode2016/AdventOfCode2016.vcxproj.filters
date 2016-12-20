@@ -57,9 +57,6 @@
     <ClInclude Include="AOC_01\AOC_01.h">
       <Filter>AOC_01</Filter>
     </ClInclude>
-    <ClInclude Include="AOC_01\Coordinate.h">
-      <Filter>AOC_01</Filter>
-    </ClInclude>
     <ClInclude Include="AOC_01\Direction.h">
       <Filter>AOC_01</Filter>
     </ClInclude>
@@ -129,6 +126,12 @@
     <ClInclude Include="AOC_11\Item.h">
       <Filter>AOC_11</Filter>
     </ClInclude>
+    <ClInclude Include="general\Coordinate.h">
+      <Filter>general</Filter>
+    </ClInclude>
+    <ClInclude Include="AOC_13\Move.h">
+      <Filter>AOC_13</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -188,6 +191,9 @@
     </ClCompile>
     <ClCompile Include="AOC_11\Floor.cpp">
       <Filter>AOC_11</Filter>
+    </ClCompile>
+    <ClCompile Include="AOC_13\Move.cpp">
+      <Filter>AOC_13</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -143,7 +143,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AOC_01\AOC_01.h" />
-    <ClInclude Include="AOC_01\Coordinate.h" />
     <ClInclude Include="AOC_01\Direction.h" />
     <ClInclude Include="AOC_02\AOC_02.h" />
     <ClInclude Include="AOC_03\AOC_03.h" />
@@ -162,10 +161,12 @@
     <ClInclude Include="AOC_11\Node.h" />
     <ClInclude Include="AOC_12\AOC_12.h" />
     <ClInclude Include="AOC_13\AOC_13.h" />
+    <ClInclude Include="AOC_13\Move.h" />
     <ClInclude Include="AOC_14\AOC_14.h" />
     <ClInclude Include="AOC_14\Key.h" />
     <ClInclude Include="AOC_15\AOC_15.h" />
     <ClInclude Include="general\CharCount.h" />
+    <ClInclude Include="general\Coordinate.h" />
     <ClInclude Include="general\InputHandler.h" />
     <ClInclude Include="general\md5.h" />
   </ItemGroup>
@@ -185,6 +186,7 @@
     <ClCompile Include="AOC_11\Node.cpp" />
     <ClCompile Include="AOC_12\AOC_12.cpp" />
     <ClCompile Include="AOC_13\AOC_13.cpp" />
+    <ClCompile Include="AOC_13\Move.cpp" />
     <ClCompile Include="AOC_14\AOC_14.cpp" />
     <ClCompile Include="AOC_15\AOC_15.cpp" />
     <ClCompile Include="general\InputHandler.cpp" />
