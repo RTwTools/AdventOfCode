@@ -55,6 +55,9 @@
     <Filter Include="AOC_17">
       <UniqueIdentifier>{f60d7dc6-ff5b-4d62-9479-f2455acf46eb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AOC_18">
+      <UniqueIdentifier>{1d516488-b04d-4c08-9b87-816ed25641bf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="general\InputHandler.h">
@@ -147,6 +150,9 @@
     <ClInclude Include="AOC_17\Route.h">
       <Filter>AOC_17</Filter>
     </ClInclude>
+    <ClInclude Include="AOC_18\AOC_18.h">
+      <Filter>AOC_18</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -219,6 +225,9 @@
     <ClCompile Include="AOC_17\Route.cpp">
       <Filter>AOC_17</Filter>
     </ClCompile>
+    <ClCompile Include="AOC_18\AOC_18.cpp">
+      <Filter>AOC_18</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="AOC_01\input01.txt">
@@ -253,6 +262,9 @@
     </Text>
     <Text Include="AOC_15\input15.txt">
       <Filter>AOC_15</Filter>
+    </Text>
+    <Text Include="AOC_18\input18.txt">
+      <Filter>AOC_18</Filter>
     </Text>
   </ItemGroup>
 </Project>
