@@ -1,6 +1,6 @@
-#include "AOC_1x.h"
+#include "AOC_2x.h"
 
-AOC_1x::AOC_1x(std::string fileName)
+AOC_2x::AOC_2x(std::string fileName)
 {
 	//open input file
 	std::string input = readFile(fileName);
@@ -16,10 +16,10 @@ AOC_1x::AOC_1x(std::string fileName)
 		
 	}
 
-	std::cout << "--- Challenge 1x A ---" << std::endl;
+	std::cout << "--- Challenge 2x A ---" << std::endl;
 	//std::cout << " [" << solutionA << "]." << std::endl;
 	
-	std::cout << "--- Challenge 1x B ---" << std::endl;
+	std::cout << "--- Challenge 2x B ---" << std::endl;
 	//std::cout << " [" << solutionB << "]." << std::endl;
 	std::cout << std::endl;
 }

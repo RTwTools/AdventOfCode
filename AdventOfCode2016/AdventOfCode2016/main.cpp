@@ -18,6 +18,7 @@
 #include "AOC_18/AOC_18.h"
 #include "AOC_19/AOC_19.h"
 #include "AOC_20/AOC_20.h"
+#include "AOC_21/AOC_21.h"
 
 int main()
 {
@@ -78,9 +79,12 @@ int main()
 	
 	//Challenge Day 19
 	AOC_19 aoc_19(3018458);
-	*/
+	
 	//Challenge Day 20
 	AOC_20 aoc_20("AOC_20/input20.txt");
+	*/
+	//Challenge Day 20
+	AOC_21 aoc_21("AOC_21/input21.txt");
 
 	system("pause");
 	return 0;
