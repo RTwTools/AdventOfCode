@@ -172,6 +172,8 @@
     <ClInclude Include="AOC_19\AOC_19.h" />
     <ClInclude Include="AOC_20\AOC_20.h" />
     <ClInclude Include="AOC_21\AOC_21.h" />
+    <ClInclude Include="AOC_22\AOC_22.h" />
+    <ClInclude Include="AOC_22\PC.h" />
     <ClInclude Include="general\CharCount.h" />
     <ClInclude Include="general\Coordinate.h" />
     <ClInclude Include="general\InputHandler.h" />
@@ -203,6 +205,8 @@
     <ClCompile Include="AOC_19\AOC_19.cpp" />
     <ClCompile Include="AOC_20\AOC_20.cpp" />
     <ClCompile Include="AOC_21\AOC_21.cpp" />
+    <ClCompile Include="AOC_22\AOC_22.cpp" />
+    <ClCompile Include="AOC_22\PC.cpp" />
     <ClCompile Include="general\InputHandler.cpp" />
     <ClCompile Include="general\md5.cpp" />
     <ClCompile Include="main.cpp" />
@@ -222,6 +226,7 @@
     <Text Include="AOC_18\input18.txt" />
     <Text Include="AOC_20\input20.txt" />
     <Text Include="AOC_21\input21.txt" />
+    <Text Include="AOC_22\input22.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
