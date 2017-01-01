@@ -175,6 +175,9 @@
     <ClInclude Include="AOC_22\AOC_22.h" />
     <ClInclude Include="AOC_22\PC.h" />
     <ClInclude Include="AOC_23\AOC_23.h" />
+    <ClInclude Include="AOC_24\AOC_24.h" />
+    <ClInclude Include="AOC_24\Road.h" />
+    <ClInclude Include="AOC_25\AOC_25.h" />
     <ClInclude Include="general\CharCount.h" />
     <ClInclude Include="general\Coordinate.h" />
     <ClInclude Include="general\InputHandler.h" />
@@ -208,6 +211,9 @@
     <ClCompile Include="AOC_21\AOC_21.cpp" />
     <ClCompile Include="AOC_22\AOC_22.cpp" />
     <ClCompile Include="AOC_23\AOC_23.cpp" />
+    <ClCompile Include="AOC_24\AOC_24.cpp" />
+    <ClCompile Include="AOC_24\Road.cpp" />
+    <ClCompile Include="AOC_25\AOC_25.cpp" />
     <ClCompile Include="general\InputHandler.cpp" />
     <ClCompile Include="general\md5.cpp" />
     <ClCompile Include="main.cpp" />
@@ -229,6 +235,8 @@
     <Text Include="AOC_21\input21.txt" />
     <Text Include="AOC_22\input22.txt" />
     <Text Include="AOC_23\input23.txt" />
+    <Text Include="AOC_24\input24.txt" />
+    <Text Include="AOC_25\input25.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

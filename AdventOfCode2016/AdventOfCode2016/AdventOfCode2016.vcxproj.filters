@@ -73,6 +73,12 @@
     <Filter Include="AOC_23">
       <UniqueIdentifier>{5cb8cc93-58d4-44ae-8f60-77e8e7125495}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AOC_24">
+      <UniqueIdentifier>{735acc87-3ee7-4c6e-9d71-48763aadbb88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AOC_25">
+      <UniqueIdentifier>{7d65a712-35ce-4f46-ae3f-50ca7a1bf2c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="general\InputHandler.h">
@@ -186,6 +192,15 @@
     <ClInclude Include="AOC_23\AOC_23.h">
       <Filter>AOC_23</Filter>
     </ClInclude>
+    <ClInclude Include="AOC_24\AOC_24.h">
+      <Filter>AOC_24</Filter>
+    </ClInclude>
+    <ClInclude Include="AOC_25\AOC_25.h">
+      <Filter>AOC_25</Filter>
+    </ClInclude>
+    <ClInclude Include="AOC_24\Road.h">
+      <Filter>AOC_24</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -276,6 +291,15 @@
     <ClCompile Include="AOC_23\AOC_23.cpp">
       <Filter>AOC_23</Filter>
     </ClCompile>
+    <ClCompile Include="AOC_24\AOC_24.cpp">
+      <Filter>AOC_24</Filter>
+    </ClCompile>
+    <ClCompile Include="AOC_25\AOC_25.cpp">
+      <Filter>AOC_25</Filter>
+    </ClCompile>
+    <ClCompile Include="AOC_24\Road.cpp">
+      <Filter>AOC_24</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="AOC_01\input01.txt">
@@ -325,6 +349,12 @@
     </Text>
     <Text Include="AOC_23\input23.txt">
       <Filter>AOC_23</Filter>
+    </Text>
+    <Text Include="AOC_24\input24.txt">
+      <Filter>AOC_24</Filter>
+    </Text>
+    <Text Include="AOC_25\input25.txt">
+      <Filter>AOC_25</Filter>
     </Text>
   </ItemGroup>
 </Project>
