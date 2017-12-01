@@ -285,3 +285,6 @@ paket-files/
 *.exe
 *.out
 *.app
+
+# python
+*.pyc
