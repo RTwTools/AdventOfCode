@@ -27,19 +27,20 @@
     <Compile Include="AdventOfCode2017.py" />
     <Compile Include="AOC_01\day01.py" />
     <Compile Include="AOC_01\day01_test.py" />
+    <Compile Include="AOC_02\day02.py" />
+    <Compile Include="AOC_02\day02_test.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AOC_01\" />
+    <Folder Include="AOC_02\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AOC_01\day01_input.txt" />
+    <Content Include="AOC_02\day02_input.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
-    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
   </PropertyGroup>
-  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
-  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
        Visual Studio and specify your pre- and post-build commands in
        the BeforeBuild and AfterBuild targets below. -->
@@ -48,4 +49,5 @@
   </Target>
   <Target Name="AfterBuild">
   </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
 </Project>
