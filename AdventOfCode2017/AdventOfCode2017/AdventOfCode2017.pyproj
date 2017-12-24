@@ -31,16 +31,19 @@
     <Compile Include="AOC_02\day02_test.py" />
     <Compile Include="AOC_03\day03.py" />
     <Compile Include="AOC_03\day03_test.py" />
+    <Compile Include="AOC_04\day04.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AOC_01\" />
     <Folder Include="AOC_02\" />
     <Folder Include="AOC_03\" />
+    <Folder Include="AOC_04\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AOC_01\day01_input.txt" />
     <Content Include="AOC_02\day02_input.txt" />
     <Content Include="AOC_03\day03_input.txt" />
+    <Content Include="AOC_04\day04_input.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
