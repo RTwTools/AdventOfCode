@@ -40,5 +40,5 @@ def day02_02(input):
 
 if __name__ == "__main__":
     inputData = open('day02_input.txt').read()
-    print 'Day 02 01 The solution to the captcha is ', day02_01(inputData),'.'
-    print 'Day 02 02 The solution to the captcha is ', day02_02(inputData),'.'
+    print 'Day 02 01 The solution is', day02_01(inputData),'.'
+    print 'Day 02 02 The solution is', day02_02(inputData),'.'
