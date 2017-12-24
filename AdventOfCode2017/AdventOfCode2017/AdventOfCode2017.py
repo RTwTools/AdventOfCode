@@ -26,5 +26,5 @@ print '---'
 
 inputData = open('AOC_04/day04_input.txt').read()
 print 'Day 04 01 The number of valid passphrases is', day04.day04_01(inputData),'.'
-print 'Day 04 02 The solution is', day04.day04_02(inputData),'.'
+print 'Day 04 02 The number of valid passphrases is', day04.day04_02(inputData),'.'
 print '---'
