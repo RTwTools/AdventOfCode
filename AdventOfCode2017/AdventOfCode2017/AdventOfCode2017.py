@@ -33,5 +33,5 @@ print '---'
 
 inputData = open('AOC_05/day05_input.txt').read()
 print 'Day 05 01 The number of steps to the exit is', day05.day05_01(inputData),'.'
-print 'Day 05 02 The number of valid passphrases is', day05.day05_02(inputData),'.'
+print 'Day 05 02 The number of steps to the exit is', day05.day05_02(inputData),'.'
 print '---'

@@ -1,4 +1,4 @@
-def runInstructions(input):
+def runInstructions(input, partB):
     instructions = [int(x) for x in input.splitlines()]
     steps = 0
     index = 0
@@ -7,16 +7,19 @@ def runInstructions(input):
     while (index < len(instructions)):
         curIndex = index
         index += instructions[index]
+        if (partB):
+            if (instructions[curIndex] >= 3):
+                instructions[curIndex] -= 2 # Two because it is always increased by one
         instructions[curIndex] += 1
         steps += 1
 
     return steps
 
 def day05_01(input):
-    return runInstructions(input)
+    return runInstructions(input, False)
 
 def day05_02(input):
-    return -1
+    return runInstructions(input, True)
 
 if __name__ == "__main__":
     inputData = open('day05_input.txt').read()
