@@ -12,7 +12,7 @@ def redistributeMemory(memoryBanks):
 
         memoryBanks[index] += 1
 
-def findInfiniteLoop(input):
+def findInfiniteLoop(input, partB):
     memoryBanks = [int(x) for x in input.split('\t')]
     steps = 0
     knownStates = []
@@ -22,13 +22,16 @@ def findInfiniteLoop(input):
         redistributeMemory(memoryBanks)
         steps += 1
 
-    return steps
+    if (partB):
+        return steps - knownStates.index(memoryBanks)
+    else:
+        return steps
 
 def day06_01(input):
-    return findInfiniteLoop(input)
+    return findInfiniteLoop(input, False)
 
 def day06_02(input):
-    return -1
+    return findInfiniteLoop(input, True)
 
 if __name__ == "__main__":
     inputData = open('day06_input.txt').read()
