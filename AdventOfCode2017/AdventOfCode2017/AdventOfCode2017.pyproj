@@ -35,6 +35,8 @@
     <Compile Include="AOC_05\day05.py" />
     <Compile Include="AOC_06\day06.py" />
     <Compile Include="AOC_06\day06_test.py" />
+    <Compile Include="AOC_07\day07.py" />
+    <Compile Include="AOC_07\day07_test.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AOC_01\" />
@@ -43,6 +45,7 @@
     <Folder Include="AOC_04\" />
     <Folder Include="AOC_05\" />
     <Folder Include="AOC_06\" />
+    <Folder Include="AOC_07\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="AOC_01\day01_input.txt" />
@@ -51,6 +54,7 @@
     <Content Include="AOC_04\day04_input.txt" />
     <Content Include="AOC_05\day05_input.txt" />
     <Content Include="AOC_06\day06_input.txt" />
+    <Content Include="AOC_07\day07_input.txt" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

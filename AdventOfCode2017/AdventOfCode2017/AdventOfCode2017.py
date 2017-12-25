@@ -5,6 +5,7 @@ sys.path.insert(0, 'AOC_03')
 sys.path.insert(0, 'AOC_04')
 sys.path.insert(0, 'AOC_05')
 sys.path.insert(0, 'AOC_06')
+sys.path.insert(0, 'AOC_07')
 
 import day01
 import day02
@@ -12,6 +13,7 @@ import day03
 import day04
 import day05
 import day06
+import day07
 
 inputData = open('AOC_01/day01_input.txt').read()
 print 'Day 01 01 The solution to the captcha is', day01.day01_01(inputData),'.'
@@ -41,4 +43,9 @@ print '---'
 inputData = open('AOC_06/day06_input.txt').read()
 print 'Day 06 01 The total number of cycles to an infinite loop is', day06.day06_01(inputData),'.'
 print 'Day 06 02 The number of cycles in the infinite loop is', day06.day06_02(inputData),'.'
+print '---'
+
+inputData = open('AOC_07/day07_input.txt').read()
+print 'Day 07 01 The name of the bottom porgram is', day07.day07_01(inputData),'.'
+print 'Day 07 02 The weight needs to be', day07.day07_02(inputData),'.'
 print '---'
