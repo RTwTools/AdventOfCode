@@ -38,7 +38,6 @@
     <Compile Include="AOC_07\day07.py" />
     <Compile Include="AOC_08\day08.py" />
     <Compile Include="AOC_09\day09.py" />
-    <Compile Include="AOC_09\day09_test.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AOC_01\" />
