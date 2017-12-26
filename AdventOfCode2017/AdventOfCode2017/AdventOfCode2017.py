@@ -7,6 +7,7 @@ sys.path.insert(0, 'AOC_05')
 sys.path.insert(0, 'AOC_06')
 sys.path.insert(0, 'AOC_07')
 sys.path.insert(0, 'AOC_08')
+sys.path.insert(0, 'AOC_09')
 
 import day01
 import day02
@@ -16,6 +17,7 @@ import day05
 import day06
 import day07
 import day08
+import day09
 
 '''
 inputData = open('AOC_01/day01_input.txt').read()
@@ -52,8 +54,13 @@ inputData = open('AOC_07/day07_input.txt').read()
 print 'Day 07 01 The name of the bottom porgram is', day07.day07_01(inputData),'.'
 print 'Day 07 02 The weight needs to be', day07.day07_02(inputData),'.'
 print '---'
-'''
+
 inputData = open('AOC_08/day08_input.txt').read()
 print 'Day 08 01 The highest value is', day08.day08_01(inputData),'.'
 print 'Day 08 02 The highest value ever is', day08.day08_02(inputData),'.'
+print '---'
+'''
+inputData = open('AOC_09/day09_input.txt').read()
+print 'Day 09 01 The total score of all groups is', day09.day09_01(inputData),'.'
+print 'Day 09 02 The number of garbage chars is', day09.day09_02(inputData),'.'
 print '---'
