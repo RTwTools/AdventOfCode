@@ -19,6 +19,7 @@ class Register:
         self.value = value
 
 registers = []
+highestValueEver = 0
 
 def getRegisterValue(regName):
     for register in registers:
@@ -31,6 +32,9 @@ def updateRegisterValue(regName, value):
     for register in registers:
         if (regName == register.name):
             register.value += value
+            global highestValueEver
+            if (highestValueEver < register.value):
+                highestValueEver = register.value
             return
 
     # Register doesn't exist
@@ -66,7 +70,8 @@ def day08_01(input):
     return getHighestValue()
 
 def day08_02(input):
-    return -1
+    global highestValueEver
+    return highestValueEver
 
 if __name__ == "__main__":
     inputData = open('day08_input.txt').read()
