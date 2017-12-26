@@ -1,3 +1,5 @@
+garbageCount = 0
+
 def readGarbage(stream, index):
     while True:
         index += 1
@@ -8,6 +10,9 @@ def readGarbage(stream, index):
         elif (char == '>'):
             # End of garbage
             return index
+        else:
+            global garbageCount
+            garbageCount += 1
 
 def getScoreOfGroups(stream):
     score = 0
@@ -29,7 +34,7 @@ def day09_01(input):
     return getScoreOfGroups(input)
 
 def day09_02(input):
-    return -1
+    return garbageCount
 
 if __name__ == "__main__":
     inputData = open('day09_input.txt').read()
