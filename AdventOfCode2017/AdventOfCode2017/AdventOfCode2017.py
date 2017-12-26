@@ -6,6 +6,7 @@ sys.path.insert(0, 'AOC_04')
 sys.path.insert(0, 'AOC_05')
 sys.path.insert(0, 'AOC_06')
 sys.path.insert(0, 'AOC_07')
+sys.path.insert(0, 'AOC_08')
 
 import day01
 import day02
@@ -14,7 +15,9 @@ import day04
 import day05
 import day06
 import day07
+import day08
 
+'''
 inputData = open('AOC_01/day01_input.txt').read()
 print 'Day 01 01 The solution to the captcha is', day01.day01_01(inputData),'.'
 print 'Day 01 02 The solution to the captcha is', day01.day01_02(inputData),'.'
@@ -48,4 +51,9 @@ print '---'
 inputData = open('AOC_07/day07_input.txt').read()
 print 'Day 07 01 The name of the bottom porgram is', day07.day07_01(inputData),'.'
 print 'Day 07 02 The weight needs to be', day07.day07_02(inputData),'.'
+print '---'
+'''
+inputData = open('AOC_08/day08_input.txt').read()
+print 'Day 08 01 The highest value is', day08.day08_01(inputData),'.'
+print 'Day 08 02 The highest value ever is', day08.day08_02(inputData),'.'
 print '---'
