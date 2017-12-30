@@ -8,6 +8,7 @@ sys.path.insert(0, 'AOC_06')
 sys.path.insert(0, 'AOC_07')
 sys.path.insert(0, 'AOC_08')
 sys.path.insert(0, 'AOC_09')
+sys.path.insert(0, 'AOC_10')
 
 import day01
 import day02
@@ -18,6 +19,7 @@ import day06
 import day07
 import day08
 import day09
+import day10
 
 '''
 inputData = open('AOC_01/day01_input.txt').read()
@@ -59,8 +61,13 @@ inputData = open('AOC_08/day08_input.txt').read()
 print 'Day 08 01 The highest value is', day08.day08_01(inputData),'.'
 print 'Day 08 02 The highest value ever is', day08.day08_02(inputData),'.'
 print '---'
-'''
+
 inputData = open('AOC_09/day09_input.txt').read()
 print 'Day 09 01 The total score of all groups is', day09.day09_01(inputData),'.'
 print 'Day 09 02 The number of garbage chars is', day09.day09_02(inputData),'.'
+print '---'
+'''
+inputData = open('AOC_10/day10_input.txt').read()
+print 'Day 10 01 The result of the knot is', day10.day10_01(inputData),'.'
+print 'Day 10 02 The hash of the knot is', day10.day10_02(inputData),'.'
 print '---'
