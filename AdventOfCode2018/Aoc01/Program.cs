@@ -23,7 +23,7 @@ namespace Aoc01
 
     private static int Assignment1(string[] input)
     {
-      return input.Select(int.Parse).Sum();
+      return input.Sum(int.Parse);
     }
 
     private static int Assignment2(string[] input)
