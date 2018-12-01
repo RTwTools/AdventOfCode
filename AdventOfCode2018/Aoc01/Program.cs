@@ -18,31 +18,25 @@ namespace Aoc01
       {
         Console.WriteLine($"Failed to open file.");
       }
-      Console.ReadLine();
+      Console.ReadKey();
     }
 
     private static int Assignment1(string[] input)
     {
-      int freq = 0;
-      input.ToList().ForEach(f => freq += int.Parse(f));
-      return freq;
+      return input.Select(int.Parse).Sum();
     }
 
     private static int Assignment2(string[] input)
     {
-      int freq = 0;
-      var freqs = new List<int>() { freq };
+      int curFreq = 0;
+      var freqs = new HashSet<int>() { curFreq };
 
       while (true)
       {
-        foreach (var line in input)
+        foreach (var freq in input.Select(f => int.Parse(f) + curFreq))
         {
-          freq += int.Parse(line);
-          if (freqs.Contains(freq))
-          {
-            return freq;
-          }
-          freqs.Add(freq);
+          if (!freqs.Add(freq)) return freq;
+          curFreq = freq;
         }
       }
     }
