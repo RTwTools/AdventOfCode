@@ -11,7 +11,7 @@
   
   <ItemGroup>
     <None Include="*.txt" CopyToPublishDirectory="Always" />
-	<None Include="*.txt" CopyToOutputDirectory="Always" />
+    <None Include="*.txt" CopyToOutputDirectory="Always" />
   </ItemGroup>
 
 </Project>
