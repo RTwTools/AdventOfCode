@@ -23,47 +23,40 @@ namespace Aoc05
 
     private static int Assignment1(string input)
     {
-      return ShrinkPolymer(input);
+      return TriggerPolarities(input);
     }
 
     private static int Assignment2(string input)
     {
-      Dictionary<char, int> combinations = new Dictionary<char, int>();
-      for (char i = 'a'; i <= 'z'; i++)
+      var lengths = new HashSet<int>();
+      var usedChars = input.Select(c => c.ToString().ToLower()).Distinct();
+
+      foreach (var @char in usedChars)
       {
-        combinations.Add(i, ShrinkPolymer(input.Replace(i.ToString(), "").Replace(char.ToUpper(i).ToString(), "")));
+        var polymer = input.Replace(@char, "", StringComparison.OrdinalIgnoreCase);
+        lengths.Add(TriggerPolarities(polymer));
       }
 
-      return combinations.Values.Min();
+      return lengths.Min();
     }
 
-    private static int ShrinkPolymer(string input)
+    private static int TriggerPolarities(string input)
     {
-      string output = input;
-      string polymer;
-      do
+      var polymer = new Stack<char>();
+
+      foreach (var @char in input)
       {
-        polymer = output;
-        output = TriggerPolarities(polymer);
-      }
-      while (output.Length != polymer.Length);
-
-      return output.Length;
-    }
-
-    private static string TriggerPolarities(string input)
-    {
-      string polymer = input;
-
-      for (int i = 0; i < polymer.Length - 1; i++)
-      {
-        if (ToggleCase(polymer[i]) == polymer[i + 1])
+        if (polymer.Any() && ToggleCase(polymer.Peek()) == @char)
+        { 
+          polymer.Pop();
+        }
+        else
         {
-          polymer = polymer.Remove(i, 2);
+          polymer.Push(@char);
         }
       }
 
-      return polymer;
+      return polymer.Count;
     }
 
     private static char ToggleCase(char @char)
