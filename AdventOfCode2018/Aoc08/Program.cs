@@ -56,10 +56,10 @@ namespace Aoc08
 
       for (int i = 0; i < childerenCount; i++)
       {
-        node.Childeren.Add(Parse(values.Skip(HeaderSize + node.SizeOfChilderen).ToList()));
+        node.Childeren.Add(Parse(values.Skip(node.SizeOf).ToList()));
       }
 
-      node.Metadata.AddRange(values.GetRange(node.SizeOfChilderen + HeaderSize, metadataCount));
+      node.Metadata.AddRange(values.GetRange(node.SizeOf, metadataCount));
 
       return node;
     }
