@@ -11,7 +11,7 @@ namespace Aoc08
     {
       if (Input.Read(args, out string[] input))
       {
-        var node = Node.Parse(input[0].Split(' ').Select(int.Parse).ToList());
+        var node = Node.Parse(new Queue<int>(input[0].Split(' ').Select(int.Parse)));
         Console.WriteLine($"Assignment 1: [{node.MetaDataSum}].");
         Console.WriteLine($"Assignment 2: [{node.Value}].");
       }
@@ -25,13 +25,9 @@ namespace Aoc08
 
   class Node
   {
-    private static readonly int HeaderSize = 2;
-    public List<Node> Childeren { get; set; }
-    public List<int> Metadata { get; set; }
-    public int SizeOf { get { return SizeOfChilderen + HeaderSize + Metadata.Count; } }
-    public int SizeOfChilderen { get { return Childeren.Sum(c => c.SizeOf); } }
+    public List<Node> Childeren { get; set; } = new List<Node>();
+    public List<int> Metadata { get; set; } = new List<int>();
     public int MetaDataSum { get { return Childeren.Sum(c => c.MetaDataSum) + Metadata.Sum(); } }
-
     public int Value
     {
       get
@@ -42,24 +38,21 @@ namespace Aoc08
       }
     }
 
-    public Node()
+    public static Node Parse(Queue<int> values)
     {
-      Childeren = new List<Node>();
-      Metadata = new List<int>();
-    }
-
-    public static Node Parse(List<int> values)
-    {
-      int childerenCount = values[0];
-      int metadataCount = values[1];
+      int childerenCount = values.Dequeue();
+      int metadataCount = values.Dequeue();
       var node = new Node();
 
       for (int i = 0; i < childerenCount; i++)
       {
-        node.Childeren.Add(Parse(values.Skip(node.SizeOf).ToList()));
+        node.Childeren.Add(Parse(values));
       }
 
-      node.Metadata.AddRange(values.GetRange(node.SizeOf, metadataCount));
+      for (int i = 0; i < metadataCount; i++)
+      {
+        node.Metadata.Add(values.Dequeue());
+      }
 
       return node;
     }
